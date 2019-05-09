@@ -3,7 +3,7 @@ Arquivos Latex do meu currículo baseado no template criado por LianTze Lim (v1.
 
 
 
-# AltaCV, yet another LaTeX CV/Résumé class
+## AltaCV, yet another LaTeX CV/Résumé class
 
 v1.1.5 (1 December 2018), by LianTze Lim (liantze@gmail.com)
 
@@ -20,11 +20,8 @@ I _knew_ I had to do something about it. And so AltaCV was born.
 
 This is how the re-created résumé looks like ([view/open on Overleaf](https://www.overleaf.com/latex/examples/recreating-business-insiders-cv-of-marissa-mayer-using-altacv/gtqfpbwncfvp)):
 
-<img src="mmayer.png" alt="Marissa Mayer's résumé, re-created with AltaCV" width="600px">
 
 Though if you're creating your own CV/résumé, you'd probably prefer using the basic template ([view/open on Overleaf](https://www.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv)):
-
-<img src="sample.png" alt="sample barebones AltaCV template" width="600px">
 
 
 ## Requirements and Compilation
