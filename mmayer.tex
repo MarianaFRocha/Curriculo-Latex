@@ -1,80 +1,210 @@
-
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
 
 %% Modified by Mariana Ferreira Rocha - 28/04/2019 %%
 
 
 
-% \cvachievement{\faTrophy}{}{Received accolades at Atos for Best Performance in team.}
-% \cvachievement{\faTrophy}{}{Received Best Debut Award at Atos. }
-% %\divider
-% \cvachievement{\faInstitution}{}{Won 2nd Consolation Prize for paper presented on Cognitive Radio Networks.}
-% %\divider
-% \cvachievement{\faGraduationCap}{}{Got Selected in "Exclusive Scholar Program" during undergrad.}
-% %\divider
-% \cvachievement{\faDollar}{}{Awarded with Narotam Sekhsaria Foundation Scholarship}
-%\cvsection{Strengths}
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
 
-%\cvtag{Hard-working (18/24)} 
-%\cvtag{Persuasive}
-%\cvtag{Motivator \& Leader}
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
 
-%\divider\smallskip
+\documentclass[10pt,a4paper,ragged2e]{altacv}
 
-%\cvtag{UX}
-%\cvtag{Mobile Devices \& Applications}
-%\cvtag{Product Management \& Marketing}
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
+% Change the page layout if you need to
+\geometry{left=2cm,right=10.5cm,marginparwidth=7.8cm,marginparsep=1.2cm,top=2.50cm,bottom=1.25cm}
 
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Mariana Ferreira Rocha}
+\tagline{Estudante de Ciência da Computação}
+\smallskip
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{marianaferrocha@gmail.com}
+  \phone{(27) 99789-8455}
+%  \mailaddress{Address, Street, 00000 County}
+  %\location{São Mateus, ES - Brasil}
+  \homepage{gitshowcase.com/marianafrocha}
+%  \twitter{@marissamayer}
+%  \linkedin{linkedin.com/in/ronak-dedhiya}
+   \github{github.com/MarianaFRocha} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\bigskip
+\bigskip
+
+\cvsection{Educação}
+\cvevent{Graduanda no Curso de Ciência da Computação}{Universidade Federal do Espírito Santo (UFES) \newline Centro Universitário Norte do Espírito Santo (Ceunes)}{}{}
+% \divider
+
+\bigskip
+
+\cvsection[page1sidebar]{Habilidades}
+
+\cvskill{C}{4}
+\smallskip
 %\divider
+\cvskill{C++, Java, Python, Git}{3}
+\smallskip
+% \divider
+\cvskill{HTML 5, CSS 3, JavaScript}{3}
+\smallskip
+% \divider
+\cvskill{Git}{2}
+% \divider
 
-%\cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
+\bigskip
 
+\cvsection{Idiomas}
+\smallskip
+\cvproject{INGLÊS}
+\smallskip
+\cvskill{Compreende}{4}
+\cvskill{Lê}{4}
+\cvskill{Escreve}{3}
+\cvskill{Fala}{3}
 
-\cvsection{Cursos e Certificados}
+\bigskip
+
+\cvproject{ESPANHOL}
+\smallskip
+\cvskill{Compreende}{3}
+\cvskill{Lê}{3}
+\cvskill{Escreve}{2}
+\cvskill{Fala}{2}
+
+\bigskip
+
+\cvsection{Áreas de Interesses e \newline \smallskip Projetos}
 \smallskip
 \begin{itemize}
-\item JAVA e JSF - Sua aplicação em WEB com JSF2
+\item Sequenciamento de Tarefas em um Ambiente Flow Shop com Penalidade para Atrasos e Adiantamentos e Data de Entrega Distintas.
 \smallskip
-\item  Java e JSF2  - Componentes ricos com Primefaces
+\item Blockchain e sua Aplicação em Criptomoedas.
 \smallskip
-\item Curso Desenvolvimento Web
+\item Grafos Aplicados em Reconhecimento de Padrões com Foco em Biometria.
 \smallskip
-\item Minicurso Básico de Latex
+\item Otimização na Criação de Rotas de Entrega de uma Loja de Móveis.
 \smallskip
-\item Minicurso Como desenvolver uma rápida aplicação utilizando
-Ruby/rails
+\item Mais Projetos no site do meu portfólio: \newline https://www.gitshowcase.com/marianafrocha 
 \smallskip
-\item Certificado TOEFL
-\smallskip
-
 %\item Placed in top 5\% in "Predict the Happiness" Hackerearth Challenge
 \end{itemize}
 \bigskip
 
-\cvsection{Atividades \newline \smallskip Complementares}
-\cvproject{Projeto de Tutoria entre Pares}
-\begin{itemize}
-\item Projeto de tutoria que tem como função dar apoio, acompanhamento e orientação à estudantes recém chegados à universidade.
-\end{itemize}
-\smallskip
-\cvproject{Hacktoberfest}
-\begin{itemize}
-\item Evento que busca incentivar a contribuição em projetos open source. Realizado pela Digital Ocean com parceira com o GitHub.
-\end{itemize}
-\smallskip
-\cvproject{2ª MAPCOM}
-\begin{itemize}
-\item 2ª Maratona de Programação de Computadores realizada no polo CEUNES da Universidade Federal do Espírito Santo.
-\end{itemize}
-\smallskip
-\cvproject{Diretoria do Evento IV ENCOMP}
-\begin{itemize}
-\item Uma das diretoras e organizadoras do evento regional IV ENCOMP (Encontro Norte Capixaba de Computação) no polo CEUNES da Universidade Federal do Espírito Santo.
-\end{itemize}
-\smallskip
-%\cvproject{Automatic Defect Inspection of solar farm using drones}
-%\begin{itemize}
-%\item Regular inspection of solar farm due to its wide size is strenuous. 
-%\item Developed a model to classify and localize defect on thermal images captured %by drones.
-%\end{itemize}
-\cvproject{}
+
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+%\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
