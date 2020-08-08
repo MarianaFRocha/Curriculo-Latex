@@ -1,7 +1,3 @@
-
-%% Modified by Mariana Ferreira Rocha - 10/06/2019 %%
-
-
 %%%%%%%%%%%%%%%%%
 % This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
 % LianTze Lim (liantze@gmail.com), based on the
@@ -15,6 +11,9 @@
 %% and version 1.3 or later is part of all distributions of LaTeX
 %% version 2003/12/01 or later.
 %%%%%%%%%%%%%%%%
+
+%% Modified by Mariana Ferreira Rocha - 28/04/2019 %%
+
 
 
 %% If you are using \orcid or academicons
@@ -66,22 +65,27 @@
 
 \begin{document}
 \name{Mariana Ferreira Rocha}
-\tagline{Estudante de Ciência da Computação}
-\smallskip
+\bigskip
+\bigskip
+\bigskip
+\tagline{Programadora}
+
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 %\photo{3.3cm}{profile.jpg}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{marianaferrocha@gmail.com}
-  \phone{(27) 99789-8455}
+  \email{marianaferrocha@gmail.com}\hspace{4mm}
+%  \faCalendar{10/01/1993}\hspace{10mm}
+  \phone{(27) 99789-8455}\hspace{4mm}
 %  \mailaddress{Address, Street, 00000 County}
-  %\location{São Mateus, ES - Brasil}
-  \homepage{gitshowcase.com/marianafrocha}
+  \location{Vitória, ES - Brasil}\hspace{4mm}
+  %\homepage{gitshowcase.com/marianafrocha}
 %  \twitter{@marissamayer}
-%  \linkedin{linkedin.com/in/ronak-dedhiya}
+
+ \linkedin{linkedin.com/in/mariana-rocha-22358912b/?jobid=1234}\hspace{3mm}
    \github{github.com/MarianaFRocha} % I'm just making this up though.
-%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  %\orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
 }
 
 %% Make the header extend all the way to the right, if you want.
@@ -98,27 +102,31 @@
 %% \cvsection title in the "main" bar.
 
 \bigskip
+\smallskip
+
+\cvsection[page1sidebar]{Educação}
+\cvevent{Graduanda no Curso de Ciência da Computação}{Universidade Federal do Espírito Santo (UFES) \newline Campus: CEUNES}{}{}
+% \divider
+
 \bigskip
 
-\cvsection{Educação}
-\cvevent{Graduanda no Curso de Ciência da Computação}{Universidade Federal do Espírito Santo (UFES) \newline Centro Universitário Norte do Espírito Santo (Ceunes)}{}{}
-% \divider
+\cvsection{Habilidades}
 
-\bigskip
-
-\cvsection[page1sidebar]{Habilidades}
-
-\cvskill{C}{4}
+\cvskill{Java}{3}
 \smallskip
-%\divider
-\cvskill{C++, Java, Python, Git}{3}
+\cvskill{Angular}{3}
+\smallskip
+\cvskill{JavaScript}{3}
 \smallskip
 % \divider
-\cvskill{HTML 5, CSS 3, JavaScript}{3}
+\cvskill{HTML 5}{3}
+\smallskip
+\cvskill{CSS 3}{3}
+\smallskip
+\cvskill{GIT}{3}
 \smallskip
 % \divider
-\cvskill{Git}{2}
-% \divider
+
 
 \bigskip
 
@@ -142,7 +150,7 @@
 
 \bigskip
 
-\cvsection{Áreas de Interesses e \newline \smallskip Projetos}
+\cvsection{Projetos}
 \smallskip
 \begin{itemize}
 \item Sequenciamento de Tarefas em um Ambiente Flow Shop com Penalidade para Atrasos e Adiantamentos e Data de Entrega Distintas.
